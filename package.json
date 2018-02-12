@@ -1,5 +1,5 @@
 {
-  "name": "boilerplate-react-app",
+  "name": "codecavecamp",
   "version": "1.0.0",
   "main": "index.js",
   "author": "“CodeCaverAmy” <“amyplant@me.com”>",
@@ -57,10 +57,10 @@
     "start": "node server/server.js",
     "heroku-postbuild": "yarn run build:prod"
   },
-  "repository": "git+https://github.com/CodeCaverAmy/IndecisionApp.git",
+  "repository": "git+https://github.com/CodeCaveCamp/codecavecamp-com.git",
   "bugs": {
-    "url": "https://github.com/CodeCaverAmy/IndecisionApp/issues"
+    "url": "https://github.com/CodeCaveCamp/codecavecamp-com.git/issues"
   },
-  "homepage": "https://github.com/CodeCaverAmy/IndecisionApp#readme",
-  "description": "App that makes decisions when you can't."
+  "homepage": "https://github.com/CodeCaveCamp/codecavecamp-com.git#readme",
+  "description": "Ready • Set • Code"
 }
