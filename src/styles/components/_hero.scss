@@ -1,0 +1,66 @@
+.hero {
+    background: white;
+    margin: $s-size 0;
+}
+
+.hero__container {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10rem 0;
+}
+
+.hero__message {
+    display: flex;
+    flex-direction: column;
+    width: $col-3;
+    margin-right: $l-size;
+}
+
+.hero__message__header {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hero__message__header__callout {
+    text-align: right;
+    h1 {
+        font-size: 8rem;
+        font-weight: 300;
+        color: $grey;
+        margin: 0;
+        line-height: 8.5rem;
+    }
+}
+
+.hero__message__body {
+    text-align: center;
+    padding-left: $l-size;
+    p {
+        font-size: $font-size-large;
+        color: $grey;
+    }
+}
+
+.hero__title {
+    text-align: right;
+    justify-content: center;
+}
+
+.hero__form {
+    background: $light-grey;
+    align-content: center;
+    margin:8rem;
+    width: $col-3;
+}
+
+.hero__form__inputs {
+    background: $light-grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5rem;
+
+    input {
+        margin-bottom: $l-size;
+    }
+}
