@@ -1,15 +1,20 @@
 import React from 'react';
 
+import Hero from './Hero';
+import CourseList from './CourseList';
+import Testimonials from './Testimonials';
+import Team from './Team';
+import EnrollmentCallout from './EnrollmentCallout';
+import Community from './Community';
+
 const LandingPage = () => (
     <div>
-        <div>Header</div>
-        <div>Hero</div>
-        <div>CourseList</div>
-        <div>Testimonials</div>
-        <div>Team</div>
-        <div>EnrollmentCallout</div>
-        <div>Community</div>
-        <div>Footer</div>
+        <Hero />
+        <CourseList />
+        <Testimonials />
+        <Team />
+        <EnrollmentCallout />
+        <Community />
     </div>
 ); 
 

@@ -15,7 +15,6 @@ export const PrivateRoute = ({ // destructure the props object
     <Route {...rest} component={(props) => (
         isAuthenticated ? (
             <div>
-                <Header />
                 <Component {...props} />
             </div>
         ) : (
