@@ -1,5 +1,5 @@
 .header {
-    background-color: $dark-blue;
+    background-color: white;
 }
 
 .header__content {
@@ -9,10 +9,12 @@
     padding: $s-size 0;
 }
 
-.header__title {
-    color: white;
+.header__logo {
+    margin-bottom: -3rem;
+}
+
+.header__link {
     text-decoration: none;
-    h1 {
-        margin: 0;
-    }
+    margin-right: $s-size;
+    color: $grey;
 }

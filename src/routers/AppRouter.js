@@ -2,7 +2,7 @@ import React from 'react';
 import { Router, Route, Switch, Link, NavLink } from 'react-router-dom';
 import createHistory from 'history/createBrowserHistory';
 
-import DashboardPage from '../components/DashboardPage';
+import LandingPage from '../components/LandingPage';
 import Header from '../components/Header';
 import LoginPage from '../components/LoginPage';
 import NotFoundPage from '../components/NotFoundPage';
@@ -16,7 +16,7 @@ const AppRouter = () => (
         <div>
             <Switch>
                 <PublicRoute path='/' exact={true} component={LoginPage} />
-                <PrivateRoute path='/dashboard' component={DashboardPage} />
+                <PrivateRoute path='/landing' component={LandingPage} />
                 <Route component={NotFoundPage} />
             </Switch>
         </div>

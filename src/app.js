@@ -37,7 +37,7 @@ firebase.auth().onAuthStateChanged((user) => {
         renderApp();
         if (history.location.pathname === '/') {
             // redirect to the dashboard page on a successful login
-            history.push('/dashboard');
+            history.push('/landing');
         }
     } else {
         store.dispatch(logout());
