@@ -1,45 +1,75 @@
 .header {
     background-color: white;
+    height: 7rem;
 }
 
 .header__content {
-    align-items: center;
+    align-items: top;
     display: flex;
     justify-content: space-between;
     padding: $s-size 0;
 }
 
-.header__logo {
-    margin-bottom: -3rem;
-}
-
 .header__link {
     text-decoration: none;
-    margin-right: $s-size;
+    padding: 0 $s-size;
     color: $grey;
 }
 
 .header__navigation-mobile {
-    display: inline-block;
-    cursor: pointer;
-    .bar {
-        width: 35px;
-        height: 4px;
-        background-color: $grey;
-        margin: 6px 0;
+    position: relative;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    .hamburger {
+        align-self: flex-end;
+        cursor: pointer;
+        .bar {
+            width: 30px;
+            height: 4px;
+            background-color: $grey;
+            margin: 6px 0;
+            transition: 0.4s;
+        }
+        &.x .bar:first-child {
+            -webkit-transform: rotate(-45deg) translate(-7px, 6px);
+            transform: rotate(-45deg) translate(-7px, 6px);
+        }
+        &.x .bar:nth-child(2) {opacity: 0;}
+        
+        &.x .bar:last-child {
+            -webkit-transform: rotate(45deg) translate(-8px, -7px);
+            transform: rotate(45deg) translate(-8px, -7px);
+        }
+    }  
+
+    .navlinks-mobile {
+        position: absolute;
+        top: 3rem;
+        right: -50rem;
+        width: 40rem;
+        background: white;
+        border: 2px solid $light-grey;
+        display: flex;
+        flex-direction: column;
+        font-size: $font-size-large;
+        margin-top: $m-size;
+        text-align: center;
         transition: 0.4s;
+
+        &.showMenu {
+            -webkit-transform: translateX(-50rem);
+            transform: translateX(-50rem);
+        }
     }
-    &.change .bar:first-child {
-        -webkit-transform: rotate(-45deg) translate(-7px, 6px);
-        transform: rotate(-45deg) translate(-7px, 6px);
-    }
-    &.change .bar:nth-child(2) {opacity: 0;}
     
-    &.change .bar:last-child {
-        -webkit-transform: rotate(45deg) translate(-8px, -7px);
-        transform: rotate(45deg) translate(-8px, -7px);
+    .header__link {
+        border-bottom: 2px solid $light-grey;
+        padding: $m-size $l-size;
+
     }
 }
+
 
 
 
