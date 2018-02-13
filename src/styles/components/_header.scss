@@ -18,3 +18,28 @@
     margin-right: $s-size;
     color: $grey;
 }
+
+.header__navigation-mobile {
+    display: inline-block;
+    cursor: pointer;
+    .bar {
+        width: 35px;
+        height: 4px;
+        background-color: $grey;
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+    &.change .bar:first-child {
+        -webkit-transform: rotate(-45deg) translate(-7px, 6px);
+        transform: rotate(-45deg) translate(-7px, 6px);
+    }
+    &.change .bar:nth-child(2) {opacity: 0;}
+    
+    &.change .bar:last-child {
+        -webkit-transform: rotate(45deg) translate(-8px, -7px);
+        transform: rotate(45deg) translate(-8px, -7px);
+    }
+}
+
+
+
