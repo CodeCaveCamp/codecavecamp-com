@@ -1,6 +1,5 @@
 import React from 'react';
 import { NavLink, Link } from 'react-router-dom';
-import { connect } from 'react-redux';
 import { startLogin, startLogout } from '../actions/auth';
 
 export class Header extends React.Component {
@@ -44,9 +43,4 @@ export class Header extends React.Component {
 }
 
 
-const mapDisatchToProps = (dispatch) => ({
-    // pass down to header startLogout
-    startLogout: () => dispatch(startLogout())
-});
-
-export default connect(undefined, mapDisatchToProps)(Header);
+export default Header;
