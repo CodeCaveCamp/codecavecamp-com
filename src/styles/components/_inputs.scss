@@ -3,7 +3,12 @@
     font-size: $font-size-small;
     font-weight: 300;
     height: 50px;
-    padding: $m-size $s-size;  
+    padding: $m-size $s-size; 
+    margin: $s-size 0; 
+
+    @media  (min-width: $desktop-breakpoint)  {
+        margin: $m-size 0; 
+    }
 }
 
 .select {
