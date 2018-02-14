@@ -5,6 +5,7 @@
   "author": "“CodeCaverAmy” <“amyplant@me.com”>",
   "license": "MIT",
   "dependencies": {
+    "autoprefixer": "^8.0.0",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
