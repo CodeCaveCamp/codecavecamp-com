@@ -4,7 +4,7 @@ const Hero = () => (
     <div className='hero'>
         <div className='hero__header-container'>
             <div className='hero__header'>
-                <div className='hero__header-logo'>
+                <div className='hero__header-logo tablet-desktop'>
                     <img className='hero__header-logo__image' src='/images/code-cave-camp-logo.svg' />
                 </div>
                 <div className='hero__header-title'>
