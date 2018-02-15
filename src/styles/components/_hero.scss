@@ -86,11 +86,10 @@
 }
 
 .hero__message {
-    margin: 0 auto;
+    margin: 2rem auto;
     width:80%;
 
     @media  (min-width: $desktop-breakpoint)  {
-        margin: 0;
         max-width: 47.5rem;
         text-align: right;
         width: 80%;

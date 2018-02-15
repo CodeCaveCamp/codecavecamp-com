@@ -10,6 +10,12 @@ html {
     background: $light-grey;
 }
 
+#id {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+}
+
 .body {
     color: $dark-grey;
     display: block;
