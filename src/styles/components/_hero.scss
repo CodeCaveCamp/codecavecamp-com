@@ -5,7 +5,13 @@
     margin: 0.5rem 0;
     text-align: center;
     width: 100%;
-    
+
+    @media  (min-width: $tablet-breakpoint) and (max-width: $desktop-breakpoint) {
+        margin: $s-size 0;
+        padding: $l-size 0;
+        flex-direction: row;
+    }
+ 
     @media  (min-width: $desktop-breakpoint) {
         margin: $s-size 0;
         flex-direction: row;
@@ -16,6 +22,10 @@
     align-items: flex-end;
     display: flex;
     width: 100%;
+
+    @media  (min-width: $tablet-breakpoint) and (max-width: $desktop-breakpoint) {
+        flex-direction: column;
+    }
     
     @media  (min-width: $desktop-breakpoint)  {
         flex-direction: column;
@@ -35,6 +45,12 @@
     @media  (min-width: $desktop-breakpoint)  {
         justify-content: flex-end;
         margin: 0;
+        width: 100%;
+    }
+
+    @media  (min-width: $desktop-breakpoint)  {
+        justify-content: flex-end;
+        margin: 0;
         width: 80%;
         max-width: 47.5rem;
     }
@@ -47,15 +63,16 @@
 
 .hero__header-logo__image {
     width: 100%;
+    max-width: 150px;
     height: auto;
 
     @media  (min-width: $desktop-breakpoint)  {
-        width: 80%;
+        width: 100%;
+        min-width: 180px;
     }
 }
 
 .hero__header-title {
-    width: 50%;
     text-align: right;
     
     .h1 {
@@ -88,6 +105,10 @@
     align-content: center;
     width: 100%;
 
+    @media  (min-width: $tablet-breakpoint) and (max-width: $desktop-breakpoint) {
+        background-color: white;
+    }
+
     @media  (min-width: $desktop-breakpoint)  {
         background-color: white;
         width: 50%;
@@ -97,7 +118,13 @@
 .hero__form {
     display: flex;
     flex-direction: column;
-    margin: 3rem 5rem;
+    margin: 0 5rem 3rem;
+
+    @media  (min-width: $tablet-breakpoint) and (max-width: $desktop-breakpoint) {
+        background: $light-grey;
+        margin: 0 2rem 0 0;
+        padding: 2rem 3rem 1rem;
+    }
 
     @media  (min-width: $desktop-breakpoint)  {
         background: $light-grey;

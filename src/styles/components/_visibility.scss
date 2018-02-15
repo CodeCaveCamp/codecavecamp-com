@@ -1,9 +1,21 @@
+// anything greater than than the $mobile-breakpoint will not be displayed
+// if the device is greter than or equal to the tablet size, anything with this class becomes invisible
 .mobile {
-    @media (min-width: $desktop-breakpoint) {
+    @media (min-width: $tablet-breakpoint) {
         display: none;
     }
 }
 
+// anything less than $mobile breakpoint or greater than $tablet-breakpoint will not be displayed
+.tablet {
+    display: none;
+    @media (max-width: $desktop-breakpoint) and (min-width: $tablet-breakpoint - 0.1rem) {
+        display: block;
+    }
+}
+
+// antying less than the $desktop-breakpoint willnote be displayed
+// if the device is less than a desktop size, anything with this class becomes invisible
 .desktop {
     @media (max-width: $desktop-breakpoint - 0.01rem) {
         display: none;

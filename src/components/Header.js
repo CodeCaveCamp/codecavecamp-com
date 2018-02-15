@@ -17,7 +17,7 @@ export class Header extends React.Component {
             <header className="header">
                 <div className="header__content">
                     <Link className="header__logo" to='/'><img src="/images/logo_header.svg" /></Link>
-                    <div className="header__navigation-desktop desktop">
+                    <div className="header__navigation-desktop tablet">
                         <NavLink className="header__link header__link--desktop" to='/Courses' activeClassName='is-active'>Courses</NavLink>
                         <NavLink className="header__link header__link--desktop" to='/Team' activeClassName='is-active'>Our Team</NavLink>
                         <NavLink className="header__link header__link--desktop" to='/Community' activeClassName='is-active'>Community</NavLink>

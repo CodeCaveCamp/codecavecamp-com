@@ -4,8 +4,19 @@
     font-weight: 300;
     height: 50px;
     padding: $m-size $s-size; 
-    margin: $s-size 0; 
+    margin-bottom: $s-size; 
+    outline: none;
+    transition: 0.3s;
 
+    &:focus {
+        background: $medium-grey;
+        color: white;
+        font-weight: 400;
+        &::placeholder {
+            color: white;
+        }
+    }
+    
     @media  (min-width: $desktop-breakpoint)  {
         margin: $m-size 0; 
     }
