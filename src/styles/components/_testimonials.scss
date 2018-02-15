@@ -1,0 +1,40 @@
+.testimonials {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem 0;
+    padding: 3rem 5rem;
+    text-align: center;
+    width: 100%;
+}
+
+.profile-icons__container {
+    margin: $l-size 0;
+    .profile-icon {
+        margin: 0 $s-size;
+        opacity: 0.7;
+        &.active {
+            opacity: 1;
+            transform: scale(1.2);
+        }
+    }
+}
+
+.star {
+    opacity: 0.4;
+    &.active {
+        opacity: 1;
+    }
+}
+
+.profile-user-name {
+    font-size: $font-size-medium;
+    font-weight: 600;
+}
+
+.profile-user-title {
+    color: $medium-grey;
+    font-size: $font-size-medium;
+    letter-spacing: 1.2px;
+}
+
