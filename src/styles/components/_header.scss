@@ -22,9 +22,11 @@
 }
 
 .header__link {
+    color: $grey;
+    font-size: $m-size;
+    line-height: 2;
     text-decoration: none;
     padding: 0 $s-size;
-    color: $grey;
 }
     
 .hamburger {
