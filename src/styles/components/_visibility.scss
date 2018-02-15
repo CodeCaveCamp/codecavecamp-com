@@ -9,7 +9,14 @@
 // anything less than $mobile breakpoint or greater than $tablet-breakpoint will not be displayed
 .tablet {
     display: none;
-    @media (max-width: $desktop-breakpoint) and (min-width: $tablet-breakpoint - 0.1rem) {
+    @media (max-width: $desktop-breakpoint) and (min-width: $tablet-breakpoint - 0.1rem) and (-webkit-min-device-pixel-ratio: 1) {
+        display: block;
+    }
+}
+
+.hires {
+    display: none;
+    @media (-webkit-max-device-pixel-ratio: 1) {
         display: block;
     }
 }

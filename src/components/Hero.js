@@ -16,6 +16,9 @@ const Hero = () => (
             <div className='hero__message tablet'>
                 <p>Sign up for our code challenges, receive a free Code Cavers notebook, and we will help get you to the starting line.</p>
             </div>
+            <div className='hero__message hires'>
+                <p>Sign up for our code challenges, receive a free Code Cavers notebook, and we will help get you to the starting line.</p>
+            </div>
             <div className='hero__message desktop'>
                 <p>Do you have the desire to build, disassemble, question, problem solve and conquer challenges that others can not?</p>
                 <p>Sign up for our code challenges, receive a free Code Cavers notebook, and we will help get you to the starting line.</p>
@@ -25,7 +28,7 @@ const Hero = () => (
                 <p>Sign up for our code challenges, receive a free Code Cavers notebook, and we will help get you to the starting line.</p>
             </div>
             <form className='hero__form'>
-                <input className='text-input' type="text" placeholder="Name" autofocus />
+                <input className='text-input' type="text" placeholder="Name" autoFocus />
                 <input className='text-input' type="text" placeholder="Email" />
                 <input className='text-input' type="text" placeholder="Set a Password" />
                 <button className='button'>Sign Me Up</button>
