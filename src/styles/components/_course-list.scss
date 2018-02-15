@@ -1,0 +1,19 @@
+.course-list {
+    background: white;
+    margin: 0.5rem 0;
+    padding: 3rem 7rem;
+    text-align: left;
+    width: 100%;
+}
+
+.course-list_courses {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    @media  (min-width: $tablet-breakpoint) {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+}

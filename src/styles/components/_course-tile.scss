@@ -1,0 +1,60 @@
+.course-tile {
+    background-color: $light-grey;
+    box-shadow: 2px 3px 8px $medium-grey;
+    color: $grey;
+    display: flex;
+    flex-direction: column;
+    margin: 3rem 0;
+    text-decoration: none;
+
+    @media  (min-width: $tablet-breakpoint) {
+        margin: 2rem;
+        width: 30%;
+    }
+}
+
+.course-tile__header {
+    align-items: center;
+    background-color:$medium-grey;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: $s-size $m-size;
+}
+
+.course-tile__icon {
+    display: flex;
+    align-items: center;
+}
+
+.course-tile__body {
+    padding: $s-size $l-size;
+}
+
+.course-tile__title {
+    font-size: $font-size-large;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 2;
+}
+
+.course-tile__description {
+    line-height: 2;
+}
+
+.course-tile__footer {
+    align-items: center;
+    color: $grey;
+    display: flex;
+    direction: row;
+    justify-content: space-between;
+    padding: $s-size $l-size;
+}
+
+.course-tile__tags {
+    border: 1px solid $medium-grey;
+    border-radius: 20px;
+    font-size: $font-size-small;
+    line-height: 2;
+    padding: 0 $m-size;
+}

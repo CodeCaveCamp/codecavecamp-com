@@ -15,6 +15,12 @@
     }
 }
 
+.button--small {
+    background: $medium-grey;
+    font-size: $font-size-small;
+    padding: 0 $m-size; 
+}
+
 .button--link {
     background: none;
 }
