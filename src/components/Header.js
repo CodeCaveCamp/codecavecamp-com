@@ -23,6 +23,12 @@ export class Header extends React.Component {
                         <NavLink className="header__link header__link--desktop" to='/Community' activeClassName='is-active'>Community</NavLink>
                         <NavLink className="header__link header__link--desktop" to='/Contact' activeClassName='is-active'>Contact</NavLink>
                     </div>
+                    <div className="header__navigation-desktop desktop">
+                        <NavLink className="header__link header__link--desktop" to='/Courses' activeClassName='is-active'>Courses</NavLink>
+                        <NavLink className="header__link header__link--desktop" to='/Team' activeClassName='is-active'>Our Team</NavLink>
+                        <NavLink className="header__link header__link--desktop" to='/Community' activeClassName='is-active'>Community</NavLink>
+                        <NavLink className="header__link header__link--desktop" to='/Contact' activeClassName='is-active'>Contact</NavLink>
+                    </div>
                     <div className="hamburger mobile"  onClick={this.onToggle}>
                         <div className="bar"></div>
                         <div className="bar"></div>
