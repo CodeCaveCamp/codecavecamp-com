@@ -28,7 +28,7 @@ const Hero = () => (
                 <p>Sign up for our code challenges, receive a free Code Cavers notebook, and we will help get you to the starting line.</p>
             </div>
             <form className='hero__form'>
-                <input className='text-input' type="text" placeholder="Name" autoFocus />
+                <input className='text-input' type="text" placeholder="Name" />
                 <input className='text-input' type="text" placeholder="Email" />
                 <input className='text-input' type="text" placeholder="Set a Password" />
                 <button className='button'>Sign Me Up</button>
