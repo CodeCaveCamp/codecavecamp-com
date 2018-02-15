@@ -21,3 +21,9 @@
         display: none;
     }
 }
+
+.tablet-desktop {
+    @media (max-width: $tablet-breakpoint - 0.01rem) {
+        display: none;
+    }
+}
