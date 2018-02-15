@@ -22,7 +22,8 @@ const CourseTile = () => (
                 <div className='course-tile__tags'>
                     Beginner
                 </div>
-                <button className='button button--small'>View Course</button>
+                <button className='button button--small mobile-tablet'>View</button>
+                <button className='button button--small desktop'>View Course</button>
             </div>
         </Link>
 );

@@ -6,6 +6,9 @@
     flex-direction: column;
     margin: 3rem 0;
     text-decoration: none;
+    width: 100%;
+    min-width: 250px;
+
 
     @media  (min-width: $tablet-breakpoint) {
         margin: 2rem;
@@ -35,11 +38,15 @@
     font-size: $font-size-large;
     font-weight: 600;
     letter-spacing: 1px;
-    line-height: 2;
+    line-height: 1.5;
 }
 
 .course-tile__description {
-    line-height: 2;
+    line-height: 1.5;
+
+    @media  (min-width: $tablet-breakpoint) {
+        line-height: 2;
+    }
 }
 
 .course-tile__footer {
