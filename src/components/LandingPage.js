@@ -8,7 +8,7 @@ import EnrollmentCallout from './EnrollmentCallout';
 import Community from './Community';
 
 const LandingPage = () => (
-    <div className='body'>
+    <div>
         <Hero />
         <CourseList />
         <Testimonials />

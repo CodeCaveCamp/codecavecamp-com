@@ -7,9 +7,10 @@
 }
 
 // anything less than $mobile breakpoint or greater than $tablet-breakpoint will not be displayed
+// or if the pixel ration is that of an iPhone X
 .tablet {
     display: none;
-    @media (max-width: $desktop-breakpoint) and (min-width: $tablet-breakpoint - 0.1rem) {
+    @media (max-width: $desktop-breakpoint) and (min-width: $tablet-breakpoint - 0.1rem), (-webkit-device-pixel-ratio : 3) {
         display: block;
     }
 }
