@@ -1,0 +1,116 @@
+.footer {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem 0;
+    padding: 3rem 2rem;
+    text-align: left;
+    width: 100%;
+
+    @media  (min-width: $tablet-breakpoint) {
+        padding: 2rem;
+    }
+}
+
+.footer-sections {
+    display: flex;
+    flex-direction: row;
+    margin-right: 1rem;
+    width: 100%;
+
+    @media  (min-width: $tablet-breakpoint) {
+        margin: 3rem;
+    }
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 1rem;
+
+    @media  (min-width: $tablet-breakpoint) {
+        width: 25%;
+    }
+}
+
+.footer-heading {
+    color: $grey;   
+    font-size: $font-size-small;
+    
+    @media  (min-width: $tablet-breakpoint) {
+        font-size: $font-size-medium;
+    }
+}
+
+.footer__contact-us {
+    margin-bottom: 2rem;
+}
+
+.footer-link {
+    color: $grey;
+    display: block;
+    font-size: $font-size-small;
+    text-decoration: none;
+
+    @media  (min-width: $tablet-breakpoint) {
+        font-size: $font-size-medium;
+    }
+}
+
+.footer-phone, .footer-text {
+    font-size: $font-size-small;
+
+    @media  (min-width: $tablet-breakpoint) {
+        font-size: $font-size-medium;
+    }
+}
+
+.footer__contact-us.mobile {
+    margin-top: 1rem;
+}
+
+.footer-newsletter-form {
+    .text-input {
+        margin-right: 1rem;
+        background: $light-grey;
+    }
+}
+
+.footer__newsletter.mobile {
+    display: flex;
+    flex-direction: row;
+    margin: 4em 0;
+    .footer__newsletter--heading {
+        margin: 0 2rem;
+        width: 50%;
+    }
+    .footer-newsletter-form {
+        display: flex;
+        flex-direction: column;
+        margin-right: 2rem;
+        width: 50%;
+
+        .text-input, .button {
+            margin-bottom: 0;
+            width: 100%;
+        }
+    }
+}
+
+
+.footer__bottom {
+    align-items: center;
+    color: $grey;    
+    display: flex;
+    flex-direction: row;
+    font-size: $font-size-small;
+    justify-content: space-between;
+    margin-top: 4rem;
+}
+
+.footer-social-icons {
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}

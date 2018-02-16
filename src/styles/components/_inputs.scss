@@ -22,6 +22,11 @@
     }
 }
 
+.text-input--small {
+    padding: 0 $m-size; 
+    height: 35px;
+}
+
 .select {
     @extend .text-input;
 }
