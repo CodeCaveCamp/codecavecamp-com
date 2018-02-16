@@ -7,8 +7,8 @@
     background: white;
     display: flex;
     justify-content: space-between;
-    margin-bottom: $s-size;
-    padding: 0 $s-size;
+    margin-bottom: $spacing-small;
+    padding: 0 $spacing-small;
     position: relative;
     z-index: 100;
 }
@@ -23,10 +23,10 @@
 
 .header__link {
     color: $grey;
-    font-size: $m-size;
-    line-height: 2;
+    font-size: $spacing-medium;
+    line-height: $line-height-large;
     text-decoration: none;
-    padding: 0 $s-size;
+    padding: 0 $spacing-small;
 }
     
 .hamburger {
@@ -58,7 +58,7 @@
     width: 100%;
     background: white;
     border: 2px solid $light-grey;
-    font-size: $font-size-large;
+    font-size: $font-body-large;
     text-align: center;
     transition: 0.6s;
     animation-timing-function: ease-out;
@@ -78,7 +78,7 @@
 
 .header__link--mobile {
     border-bottom: 2px solid $light-grey;
-    padding: $m-size $l-size;
+    padding: $spacing-medium $spacing-large;
 
 }
 

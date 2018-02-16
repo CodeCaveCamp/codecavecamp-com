@@ -1,10 +1,10 @@
 .text-input {
     border: none;
-    font-size: $font-size-small;
+    font-size: $font-body-small;
     font-weight: 300;
     height: 50px;
-    padding: $m-size $s-size; 
-    margin-bottom: $s-size; 
+    padding: $spacing-medium $spacing-small; 
+    margin-bottom: $spacing-small; 
     outline: none;
     transition: 0.3s;
 
@@ -18,12 +18,12 @@
     }
     
     @media  (min-width: $desktop-breakpoint)  {
-        margin: $m-size 0; 
+        margin: $spacing-medium 0; 
     }
 }
 
 .text-input--small {
-    padding: 0 $m-size; 
+    padding: 0 $spacing-medium; 
     height: 35px;
 }
 

@@ -3,22 +3,22 @@
     border: none;
     color: white;
     display: inline-block;
-    font-size: $font-size-medium;
+    font-size: $font-body-medium;
     font-weight: 300;
-    line-height: 2.5;
-    margin: $s-size 0; 
-    padding: 0 $s-size;
+    line-height: $line-height-xlarge;
+    margin: $spacing-small 0; 
+    padding: 0 $spacing-small;
     text-decoration: none;
 
     @media  (min-width: $desktop-breakpoint)  {
-        margin: $m-size 0; 
+        margin: $spacing-medium 0; 
     }
 }
 
 .button--small {
     background: $medium-grey;
-    font-size: $font-size-small;
-    padding: 0 $m-size; 
+    font-size: $font-body-small;
+    padding: 0 $spacing-medium; 
 }
 
 .button--link {

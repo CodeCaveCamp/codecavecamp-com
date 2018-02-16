@@ -7,11 +7,11 @@
 }
 
 .profile-icon {
-    margin-bottom: 2rem;
+    margin-bottom: $spacing-medium;
 }
 
 .team-member-name {
-    font-size: $font-size-medium;
+    font-size: $font-body-medium;
     font-weight: 500;
     letter-spacing: 1.5px;
     line-height: 2;
@@ -19,7 +19,7 @@
 
 .team-member-title {
     color: $medium-grey;
-    font-size: $font-size-medium;
+    font-size: $font-body-medium;
     font-weight: 200;
     letter-spacing: 1.5px;
     line-height: 2;

@@ -19,8 +19,8 @@ html {
 .body {
     color: $dark-grey;
     display: block;
-    font-size: $m-size; // 16 pixels
-    line-height: 1.6;
+    font-size: $font-body-medium; // 16 pixels
+    line-height: $line-height-medium;
     width: 100%;
 }
 

@@ -36,10 +36,10 @@
 
 .footer-heading {
     color: $grey;   
-    font-size: $font-size-small;
+    font-size: $font-body-small;
     
     @media  (min-width: $tablet-breakpoint) {
-        font-size: $font-size-medium;
+        font-size: $font-body-medium;
     }
 }
 
@@ -50,19 +50,19 @@
 .footer-link {
     color: $grey;
     display: block;
-    font-size: $font-size-small;
+    font-size: $font-body-small;
     text-decoration: none;
 
     @media  (min-width: $tablet-breakpoint) {
-        font-size: $font-size-medium;
+        font-size: $font-body-medium;
     }
 }
 
 .footer-phone, .footer-text {
-    font-size: $font-size-small;
+    font-size: $font-body-small;
 
     @media  (min-width: $tablet-breakpoint) {
-        font-size: $font-size-medium;
+        font-size: $font-body-medium;
     }
 }
 
@@ -72,7 +72,7 @@
 
 .footer-newsletter-form {
     .text-input {
-        margin-right: 1rem;
+        margin-right: $spacing-small;
         background: $light-grey;
     }
 }
@@ -80,7 +80,7 @@
 .footer__newsletter.mobile {
     display: flex;
     flex-direction: row;
-    margin: 4em 0;
+    margin: $spacing-large 0;
     .footer__newsletter--heading {
         margin: 0 2rem;
         width: 50%;
@@ -104,9 +104,9 @@
     color: $grey;    
     display: flex;
     flex-direction: row;
-    font-size: $font-size-small;
+    font-size: $font-body-small;
     justify-content: space-between;
-    margin-top: 4rem;
+    margin-top: $spacing-large;
 }
 
 .footer-social-icons {

@@ -4,14 +4,14 @@
     color: $grey;
     display: flex;
     justify-content: space-between;
-    padding: $s-size $m-size;
+    padding: $spacing-small $spacing-medium;
 }
 
 .list-body {
-    margin-bottom: $m-size;
+    margin-bottom: $spacing-medium;
 
     @media (min-width: $desktop-breakpoint) {
-        margin-bottom: $l-size;
+        margin-bottom: $spacing-large;
     }
 }
 
@@ -21,7 +21,7 @@
     color: $dark-grey;
     display: flex;
     flex-direction: column;
-    padding: $s-size;
+    padding: $spacing-small;
     text-decoration: none;
     transition: background 0.3s ease;
     &:hover {
@@ -32,7 +32,7 @@
         align-items: center;
         flex-direction: row;
         justify-content: space-between;
-        padding: $m-size;
+        padding: $spacing-medium;
     }
 }
 
@@ -43,15 +43,15 @@
 
 .list-item__subtitle {
     color: $grey;
-    font-size: $font-size-small;
+    font-size: $font-body-small;
 }
 
 .list-item__data {
-    margin: $s-size 0 0 0;
+    margin: $spacing-small 0 0 0;
 
     @media (min-width: $desktop-breakpoint) {
         margin: 0;
-        padding-left: $s-size;
+        padding-left: $spacing-small;
     }
 }
 
@@ -59,7 +59,7 @@
     align-items: center;
     color: $grey;
     justify-content: center;
-    padding: $m-size;
+    padding: $spacing-medium;
     &:hover {
         background: none;
     }
