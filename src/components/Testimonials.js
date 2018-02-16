@@ -1,9 +1,11 @@
 import React from 'react';
 
 const Testimonials = () => (
-    <div  className="testimonials">
-        <h1 className='testimonials-title'>Don’t Just Take Our Word For It</h1>
-        <p className='testimoials-subtitle'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <div  className="component-base testimonials">
+        <div className='component-base__header'>
+            <h1 className='component-base__title'>Don’t Just Take Our Word For It</h1>
+            <p className='component-base__subtitle'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
         <div className='profile-icons__container'>
             <img className='profile-icon' src='/images/profile-icon.png' />
             <img className='profile-icon active' src='/images/profile-icon.png' />

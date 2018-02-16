@@ -1,19 +1,5 @@
-.testimonials {
-    background: white;
-    display: flex;
-    flex-direction: column;
-    margin: 0.5rem 0;
-    padding: 3rem;
-    text-align: center;
-    width: 100%;
-
-    @media  (min-width: $tablet-breakpoint) {
-        padding: 3rem 1rem;
-    }
-}
-
 .user-testimony, .testimonials-subtitle {
-    margin: 0 3rem;
+    margin: 0 $spacing-large;
 
     @media  (min-width: $tablet-breakpoint) {
         margin: 0 15rem;
@@ -23,7 +9,7 @@
 .profile-icons__container {
     margin: $l-size 0;
     .profile-icon {
-        margin: 0 $s-size;
+        margin: 0 $spacing-small;
         opacity: 0.7;
         &.active {
             opacity: 1;
@@ -40,13 +26,14 @@
 }
 
 .profile-user-name {
-    font-size: $font-size-medium;
+    font-size: $font-body-medium;
     font-weight: 600;
+    letter-spacing: $letter-spacing-small;
 }
 
 .profile-user-title {
     color: $medium-grey;
-    font-size: $font-size-medium;
-    letter-spacing: 1.2px;
+    font-size: $font-body-medium;
+    letter-spacing: $letter-spacing-small;
 }
 
