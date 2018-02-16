@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Hero = () => (
-    <div className='hero'>
+    <div className='component-base hero'>
         <div className='hero__header-container'>
             <div className='hero__header'>
                 <div className='hero__header-logo tablet-desktop'>

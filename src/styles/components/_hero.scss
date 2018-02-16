@@ -1,19 +1,13 @@
 .hero {
-    background: white;
-    display: flex;
-    flex-direction: column;
-    margin: 0.5rem 0;
-    text-align: center;
-    width: 100%;
-
+    align-items: center;
     @media  (min-width: $tablet-breakpoint) and (max-width: $desktop-breakpoint) {
-        margin: $s-size 0;
-        padding: $l-size 0;
+        margin: $spacing-small 0;
+        padding: $spacing-large 0;
         flex-direction: row;
     }
 
     @media  (min-width: $desktop-breakpoint) {
-        margin: $s-size 0;
+        margin: $spacing-small 0;
         flex-direction: row;
     }
 }
@@ -21,6 +15,7 @@
 .hero__header-container {
     align-items: flex-end;
     display: flex;
+    
     width: 100%;
 
     @media  (min-width: $tablet-breakpoint) and (max-width: $desktop-breakpoint) {
@@ -29,7 +24,7 @@
     
     @media  (min-width: $desktop-breakpoint)  {
         flex-direction: column;
-        margin: 5rem 0;
+        margin: $spacing-large 0;
         width: 50%;
     }
 }
@@ -46,8 +41,6 @@
         justify-content: flex-end;
         margin: 0;
         padding: 0;
-        // width: 80%;
-        // max-width: 47.5rem;
     }
 }
 
@@ -74,9 +67,9 @@
     .h1 {
         color: $grey;
         font-family: Arial, Helvetica, sans-serif;
-        font-size: 5rem;
+        font-size: $font-header-xlarge;
         font-weight: 300;
-        line-height: 1;
+        line-height: $line-height-small;
         margin: 0;
     }
 
@@ -86,7 +79,7 @@
 }
 
 .hero__message {
-    margin: 2rem auto;
+    margin: $spacing-medium auto;
     width:80%;
 
     @media  (min-width: $desktop-breakpoint)  {
@@ -117,18 +110,18 @@
 .hero__form {
     display: flex;
     flex-direction: column;
-    margin: 0 5rem 3rem;
+    margin: 0 $spacing-large $spacing-medium;
 
     @media  (min-width: $tablet-breakpoint) and (max-width: $desktop-breakpoint) {
         background: $light-grey;
-        margin: 0 2rem 0 0;
-        padding: 2rem 3rem 1rem;
+        margin: 0 $spacing-medium 0 0;
+        padding: $spacing-medium $spacing-large 1rem;
     }
 
     @media  (min-width: $desktop-breakpoint)  {
         background: $light-grey;
-        margin: 5rem;
-        padding: 3rem 5rem;
+        margin: $spacing-xlarge;
+        padding: $spacing-large $spacing-xlarge;
     
     }
 }
