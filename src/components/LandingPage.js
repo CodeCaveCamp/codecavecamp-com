@@ -4,7 +4,7 @@ import Hero from './Hero';
 import CourseList from './CourseList';
 import Testimonials from './Testimonials';
 import Team from './Team';
-import EnrollmentCallout from './EnrollmentCallout';
+import Enrollment from './Enrollment';
 import Community from './Community';
 
 const LandingPage = () => (
@@ -13,7 +13,7 @@ const LandingPage = () => (
         <CourseList />
         <Testimonials />
         <Team />
-        <EnrollmentCallout />
+        <Enrollment />
         <Community />
     </div>
 ); 

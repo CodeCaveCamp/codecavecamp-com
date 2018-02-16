@@ -6,6 +6,10 @@
     padding: 3rem 5rem;
     text-align: center;
     width: 100%;
+
+    @media  (min-width: $tablet-breakpoint) {
+        padding: 3rem 15rem;
+    }
 }
 
 .profile-icons__container {
