@@ -72,7 +72,7 @@ const Footer = () => (
             </form>
         </div>
         <div className='footer__bottom'>
-            <div className='footer-copyright'>Code Cave Camp | © Copyright 2018</div>
+            <div className='footer-copyright'>Code Cave Camp © 2018</div>
             <div className='footer-social-icons'>
                 <Link className='footer-link' to='/'><img className='social-icon' src='/images/icon-twitter.png' /></Link>
                 <Link className='footer-link' to='/'><img className='social-icon' src='/images/icon-facebook.png' /></Link>
