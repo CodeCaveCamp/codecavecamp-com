@@ -18,6 +18,16 @@
     }
 }
 
+.component-base__header {
+    margin: 0 auto;
+    width: 90%;
+
+    @media  (min-width: $tablet-breakpoint) {
+        margin: $spacing-large auto;
+        width: 80%;
+    }
+}
+
 .component-base__title {
     font-size: $font-header-medium;
 }
