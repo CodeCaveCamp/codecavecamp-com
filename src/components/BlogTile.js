@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const BlogTile = () => (
-    <Link className='blog-tile' to={`/`}>
+    <Link className='blog-tile tablet-desktop' to={`/`}>
         <div className='blog-tile-header'>
             <img className='blog-tile-image' src='/images/placeholder-blog.png' />
         </div>
