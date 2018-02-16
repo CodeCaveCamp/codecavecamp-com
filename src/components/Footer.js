@@ -62,7 +62,7 @@ const Footer = () => (
         </div>
 
         <div className='footer__newsletter mobile'>
-            <div class='footer__newsletter--heading'>
+            <div className='footer__newsletter--heading'>
                 <h3 className='footer-heading'>Newsletter</h3>
                 <p className='footer-text'>Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
             </div>

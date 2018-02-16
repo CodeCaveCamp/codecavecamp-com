@@ -19,7 +19,7 @@
     width: 100%;
 
     @media  (min-width: $tablet-breakpoint) {
-        margin: 3rem;
+        margin: 3rem 0;
     }
 }
 
@@ -110,7 +110,7 @@
 }
 
 .footer-social-icons {
-    display:flex;
+    display: flex;
     flex-direction: row;
     justify-content: flex-end;
     margin: 0;

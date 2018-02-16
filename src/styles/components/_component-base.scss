@@ -1,0 +1,27 @@
+.component-base {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0.5rem 0;
+    padding: 3rem 2rem;
+    text-align: center;
+    width: 100%;
+    
+    a {
+        color: $grey;
+        text-decoration: none;
+    }
+
+    @media  (min-width: $tablet-breakpoint) {
+        padding: 2rem;
+    }
+}
+
+.component-base__title {
+    font-size: $font-header-medium;
+}
+
+.component-base__subtitle {
+    font-size: $font-header-small;
+}

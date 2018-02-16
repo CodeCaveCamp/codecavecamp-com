@@ -7,11 +7,35 @@ $light-grey: #f7f7f7;
 $medium-grey: #CDCDD2;
 
 // Font Sizes
+$font-header-large: 3.0rem;
+$font-header-medium: 2.5rem;
+$font-header-small: 1.8rem;
+
+$font-body-large: 1.8rem;
+$font-body-medium: 1.6rem;
+$font-body-small: 1.4rem;
+
+$line-height-small: 1.2;
+$line-height-medium: 1.5;
+$line-height-large: 2;
+$line-height-xlarge: 2.5;
+
+$letter-spacing-small: 0.1rem;
+
+
+// TODO: replace these fonts with ones above
 $font-size-small: 1.4rem;
 $font-size-medium: 1.8rem;
 $font-size-large: 2.5rem;
 
 // Spacing
+$spacing-xsmall: 1.0rem;
+$spacing-small: 1.4rem;
+$spacing-medium: 2rem;
+$spacing-large: 3.2rem;
+$spacing-xlage: 4.8rem;
+
+// TODO: replace these sizes with ones above
 $s-size: 1.2rem;
 $m-size: 1.6rem;
 $l-size: 3.2rem;

@@ -3,9 +3,12 @@
 @import './base/base';
 
 // Components
+@import './components/blog-tile';
 @import './components/box-layout';
 @import './components/button';
 @import './components/content-container';
+@import './components/community';
+@import './components/component-base';
 @import './components/course-list';
 @import './components/course-tile';
 @import './components/enrollment';
