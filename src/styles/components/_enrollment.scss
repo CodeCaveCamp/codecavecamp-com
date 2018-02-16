@@ -3,12 +3,20 @@
     display: flex;
     flex-direction: column;
     margin: 0.5rem 0;
-    padding: 3rem 5rem;
+    padding: 3rem;
     text-align: center;
     width: 100%;
 
     @media  (min-width: $tablet-breakpoint) {
-        padding: 3rem 15rem;
+        padding: 3rem 1rem;
+    }
+}
+
+.enrollment-description {
+    margin: 0 3rem;
+
+    @media  (min-width: $tablet-breakpoint) {
+        margin: 0 15rem;
     }
 }
 
@@ -25,7 +33,7 @@
     input {
         background: $light-grey;
         margin: $s-size 0;
-        @media  (min-width: $desktop-breakpoint) {
+        @media  (min-width: $tablet-breakpoint) {
             margin-right: $m-size;
         }
     }
