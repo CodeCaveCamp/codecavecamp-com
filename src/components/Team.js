@@ -2,11 +2,11 @@ import React from 'react';
 import TeamTile from './TeamTile';
 
 const Team = () => (
-    <div  className="team tablet-desktop">
-        <h1 className='team-title'>Meet Our Team</h1>
-        <p className='team-subtitle'>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        </p>
+    <div  className="component-base team tablet-desktop">
+        <div className='component-base__header'>
+            <h1 className='component-base__title'>Meet Our Team</h1>
+            <p className='component-base__subtitle'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
         <div className='team-profiles'>
             <TeamTile />
             <TeamTile />

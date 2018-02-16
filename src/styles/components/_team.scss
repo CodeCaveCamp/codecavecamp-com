@@ -1,17 +1,3 @@
-.team {
-    background: white;
-    display: flex;
-    flex-direction: column;
-    margin: 0.5rem 0;
-    padding: 3rem;
-    text-align: center;
-    width: 100%;
-
-    @media  (min-width: $tablet-breakpoint) {
-        padding: 3rem 1rem;
-    }
-}
-
 .team-profiles {
     display: flex;
     flex-direction: row;
