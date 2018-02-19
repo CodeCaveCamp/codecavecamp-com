@@ -1,6 +1,5 @@
-import { createStore, combineReducers, applyMiddleware, compose } from 'redux';
-import thunk from 'redux-thunk';
-import authReducer from '../reducers/auth';
+import { createStore, combineReducers } from 'redux';
+import courseReducer from '../reducers/courses';
 
 // if we are using the dev tools || if we are NOT using the devtools ....
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
@@ -8,10 +7,9 @@ const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 export default () => {
     const store = createStore(
         combineReducers({
-            auth: authReducer
-        }),
-        composeEnhancers(applyMiddleware(thunk))
+            courses: courseReducer
+        })
     );
 
     return store;
-}
+};

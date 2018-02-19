@@ -1,10 +1,16 @@
+// Libraries
 import React from 'react';
 import { Router, Route, Switch, Link, NavLink } from 'react-router-dom';
 import createHistory from 'history/createBrowserHistory';
 
-import LandingPage from '../components/LandingPage';
-import Header from '../components/Header';
+// Pages
 import LoginPage from '../components/LoginPage';
+import LandingPage from '../components/LandingPage';
+import CoursesPage from '../components/CoursesPage';
+import AddCoursePage from '../components/AddCoursePage';
+
+// Components
+import Header from '../components/Header';
 import NotFoundPage from '../components/NotFoundPage';
 import Footer from '../components/Footer';
 
@@ -16,6 +22,8 @@ const AppRouter = () => (
             <Header />
             <Switch>
                 <Route path='/' exact={true} component={LandingPage} />
+                <Route path='/courses' exact={true} component={CoursesPage} />
+                <Route path='/courses/add' component={AddCoursePage} />
                 <Route component={NotFoundPage} />
             </Switch>
             <Footer />
