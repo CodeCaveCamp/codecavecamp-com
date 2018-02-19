@@ -10,7 +10,7 @@ export default (state = coursesReducerDefaultState, action) => {
             ];
     case 'REMOVE_COURSE':
       return state.filter(({ id }) => id !== action.id);
-    case 'EDIT_COURES':
+    case 'EDIT_COURSE':
         return state.map((course) => { 
             if (course.id === action.id) { 
                 return { 

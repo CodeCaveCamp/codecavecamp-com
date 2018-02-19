@@ -1,13 +1,21 @@
 import React from 'react';
+import moment from 'moment';
+
+const now = moment();
 
 export default class CourseForm extends React.Component {
-    state = {
-        title: '',
-        description: '',
-        duration: '',
-        level: '',
-        error: ''
-    };
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            title: props.course ? props.course.title : '',
+            description: props.course ? props.course.description : '',
+            duration: props.course ? props.course.duration : '',
+            level: props.course ? props.course.level : '',
+            createdAt: props.course ? moment(props.course.createdAt) : now,
+            error: ''
+        };
+    }
 
     onTitleChange = (e) => {
         const title = e.target.value;

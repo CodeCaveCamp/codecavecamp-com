@@ -8,6 +8,7 @@ import LoginPage from '../components/LoginPage';
 import LandingPage from '../components/LandingPage';
 import CoursesPage from '../components/CoursesPage';
 import AddCoursePage from '../components/AddCoursePage';
+import EditCoursePage from '../components/EditCoursePage';
 
 // Components
 import Header from '../components/Header';
@@ -24,6 +25,7 @@ const AppRouter = () => (
                 <Route path='/' exact={true} component={LandingPage} />
                 <Route path='/courses' exact={true} component={CoursesPage} />
                 <Route path='/courses/add' component={AddCoursePage} />
+                <Route path='/courses/edit/:id' component={EditCoursePage} />
                 <Route component={NotFoundPage} />
             </Switch>
             <Footer />

@@ -2,8 +2,8 @@ import React from 'react';
 import numeral from 'numeral';
 import { Link } from 'react-router-dom';
 
-const CourseTile = ({ title, description, duration, level }) => (
-        <Link className='course-tile' to={`/`}>
+const CourseTile = ({ id, title, description, duration, level }) => (
+        <Link className='course-tile' to={`/courses/edit/${id}`}>
             <div className='course-tile__header'>
                 <div className='course-tile__icon'>
                     <img src='/images/course-icon.png' />

@@ -13,12 +13,11 @@ import { firebase } from './firebase/firebase';
 
 const store = configureStore();
 
-store.dispatch(addCourse({ title: 'Jumpstart', description: 'Beginner HTML and CSS', duration: '17 hours', level: 'beginner' }));
-store.dispatch(addCourse({ title: 'RAMP', description: 'Advanced HTML and CSS', duration: '6 weeks', level: 'intermediate'  }));
+store.dispatch(addCourse({ id: '1', title: 'Jumpstart', description: 'Beginner HTML and CSS', duration: '17 hours', level: 'beginner' }));
+store.dispatch(addCourse({ id: '2', title: 'RAMP', description: 'Advanced HTML and CSS', duration: '6 weeks', level: 'intermediate'  }));
 
 const state = store.getState();
 const visibleCourses = getVisibleCoures(state.courses);
-console.log(visibleCourses);
 
 const jsx = (
     <Provider store={store}>
