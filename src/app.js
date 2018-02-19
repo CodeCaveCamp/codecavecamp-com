@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import AppRouter, { history } from './routers/AppRouter';
 import configureStore from './store/configureStore';
-import { addCourse } from './actions/courses';
+import { startGetCourses } from './actions/courses';
 import getVisibleCoures from './selectors/courses';
 
 import 'normalize.css/normalize.css';
@@ -13,16 +13,14 @@ import { firebase } from './firebase/firebase';
 
 const store = configureStore();
 
-store.dispatch(addCourse({ id: '1', title: 'Jumpstart', description: 'Beginner HTML and CSS', duration: '17 hours', level: 'beginner' }));
-store.dispatch(addCourse({ id: '2', title: 'RAMP', description: 'Advanced HTML and CSS', duration: '6 weeks', level: 'intermediate'  }));
-
-const state = store.getState();
-const visibleCourses = getVisibleCoures(state.courses);
-
 const jsx = (
     <Provider store={store}>
         <AppRouter />
     </Provider>
 );
 
-ReactDOM.render(jsx, document.getElementById('app'));
+ReactDOM.render(<p>Loading...</p>, document.getElementById('app'));
+
+store.dispatch(startGetCourses()).then(() => {
+    ReactDOM.render(jsx, document.getElementById('app'));
+})

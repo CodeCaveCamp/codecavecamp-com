@@ -1,6 +1,30 @@
 import uuid from 'uuid'; // create universail identifiers
 import database from '../firebase/firebase';
 
+// getCourses (from Redux)
+export const getCourses = (courses) => ({
+    type: 'GET_COURSES',
+    courses
+});
+
+// startGetCourese (from Firebase)
+
+// fetch all course data once, and parse the data into an array, disptach setExpenses
+export const startGetCourses = () => {
+    return (dispatch) => {
+        return database.ref('courses').once('value').then((snapshot) => {
+            const courses = [];
+            snapshot.forEach((childSnapshot) => {
+                courses.push({
+                    id: childSnapshot.key,
+                    ...childSnapshot.val()
+                });
+            });
+            dispatch(getCourses(courses));
+        })
+    }
+};
+
 // addCourse (to Redux)
 export const addCourse = (course) => ({
     type: 'ADD_COURSE',
@@ -24,7 +48,7 @@ export const startAddCourse = (courseData = {}) => {
                 ...course
             }));
         });
-    };
+    };  
 };
 
 // REMOVE_COURSE
@@ -38,10 +62,4 @@ export const editCourse = (id, updates) => ({
     type: 'EDIT_COURSE',
     id,
     updates
-});
-
-// GET_COURSES
-export const getCourses = (courses) => ({
-    type: 'GET_COURSES',
-    courses
 });
