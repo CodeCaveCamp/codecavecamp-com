@@ -1,7 +1,9 @@
 import React from 'react';
 import CourseTile from './CourseTile';
+import { connect } from 'react-redux';
+import selectCourses from '../selectors/courses';
 
-const CourseList = () => (
+const CourseList = (props) => (
     <div  className="component-base course-list">
         <div className='component-base__header'>
             <h1 className='component-base__title'>Courses</h1>
@@ -10,12 +12,15 @@ const CourseList = () => (
             </p>
         </div>
         <div className='course-list_courses'>
-            <CourseTile />
-            <CourseTile />
-            <CourseTile />
-            <CourseTile />
+            {props.courses.map((course) => {
+                return <CourseTile key={course.title} {...course} />
+            })}
         </div>
     </div>
 ); 
 
-export default CourseList;
+const mapStateToProps = (state) => ({
+    courses: selectCourses(state.courses)
+});
+
+export default connect(mapStateToProps)(CourseList);
