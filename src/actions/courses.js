@@ -1,11 +1,31 @@
 import uuid from 'uuid'; // create universail identifiers
 import database from '../firebase/firebase';
 
-// ADD_COURSE
+// addCourse (to Redux)
 export const addCourse = (course) => ({
     type: 'ADD_COURSE',
     course
 });
+
+// startAddCourse (firegbase)
+export const startAddCourse = (courseData = {}) => {
+    return (dispatch) => {
+        const {
+            title = '',
+            description = '', 
+            duration = '',
+            level = '', 
+            createdAt = 0
+        } = courseData;
+        const course = { title, description, duration,level,createdAt };
+        database.ref('courses').push(course).then((ref) => {
+            dispatch(addCourse({
+                id: ref.id,
+                ...course
+            }));
+        });
+    };
+};
 
 // REMOVE_COURSE
 export const removeCourse = ( { id } = {} ) => ({

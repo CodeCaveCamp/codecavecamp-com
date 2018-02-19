@@ -1,18 +1,28 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import CourseForm from './CourseForm';
-import { addCourse } from '../actions/courses';
+import { startAddCourse } from '../actions/courses';
 
-const AddCoursePage = (props) => (
-    <div className='component-base'>
-        <h1>Add Course</h1>
-        <CourseForm 
-            onSubmit={(course) => {
-                props.dispatch(addCourse(course));
-                props.history.push('/');
-            }}
-        />
-    </div>
-);
 
-export default connect()(AddCoursePage);
+export class AddCoursePage extends React.Component {
+    onSubmit = (course) => {
+        this.props.startAddCourse(course);
+        this.props.history.push('/');
+    };
+    render () {
+        return (
+            <div className='component-base'>
+                <h1>Add Course</h1>
+                <CourseForm 
+                    onSubmit={this.onSubmit}
+                />
+            </div>
+        );
+    }
+}
+
+const mapDispatchToProps = (dispatch) => ({
+    startAddCourse: (course) => dispatch(startAddCourse(course))
+});
+
+export default connect(undefined, mapDispatchToProps)(AddCoursePage);
