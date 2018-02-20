@@ -9,6 +9,7 @@ import LandingPage from '../components/LandingPage';
 import CoursesPage from '../components/CoursesPage';
 import AddCoursePage from '../components/AddCoursePage';
 import EditCoursePage from '../components/EditCoursePage';
+import AddTeamMemberPage from '../components/AddTeamMemberPage';
 
 // Components
 import Header from '../components/Header';
@@ -26,6 +27,7 @@ const AppRouter = () => (
                 <Route path='/courses' exact={true} component={CoursesPage} />
                 <Route path='/courses/add' component={AddCoursePage} />
                 <Route path='/courses/edit/:id' component={EditCoursePage} />
+                <Route path='/team/add' component={AddTeamMemberPage} />
                 <Route component={NotFoundPage} />
             </Switch>
             <Footer />
