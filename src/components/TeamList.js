@@ -18,7 +18,7 @@ const Team = (props) => (
 ); 
 
 const mapStateToProps = (state) => ({
-    teamMembers: state.teamMembers
+    teamMembers: selectTeamMembers(state.teamMembers)
 });
 
 export default connect(mapStateToProps)(Team);

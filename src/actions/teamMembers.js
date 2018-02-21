@@ -1,4 +1,5 @@
 import database from '../firebase/firebase';
+import { moment } from 'moment';
 
 // getTeamMembers (from Redux)
 export const getTeamMembers = (teamMembers) => ({
@@ -34,9 +35,15 @@ export const startAddTeamMember = (teamMemberData = {}) => {
             name = '',
             title = '',
             bio = '',
+            status = '',
+            displayOrder = 0,
+            linkedIn ='',
+            facebook = '',
+            twitter = '',
+            dribbble = '',
             createdAt = 0
         } = teamMemberData;
-        const teamMember = { name, title, bio, createdAt };
+        const teamMember = { name, title, bio, displayOrder, linkedIn, facebook, twitter, dribbble, createdAt };
         database.ref('teamMembers').push(teamMember).then((ref) => {
             dispatch(addTeamMember({
                 id: ref.id,
