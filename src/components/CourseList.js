@@ -13,7 +13,7 @@ const CourseList = (props) => (
         </div>
         <div className='course-list_courses'>
             {props.courses.map((course) => {
-                return <CourseTile key={course.title} {...course} />
+                return <CourseTile key={course.id} {...course} />
             })}
         </div>
     </div>

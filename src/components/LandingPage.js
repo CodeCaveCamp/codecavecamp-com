@@ -3,7 +3,7 @@ import React from 'react';
 import Hero from './Hero';
 import CourseList from './CourseList';
 import Testimonials from './Testimonials';
-import Team from './Team';
+import TeamList from './TeamList';
 import Enrollment from './Enrollment';
 import Community from './Community';
 
@@ -12,7 +12,7 @@ const LandingPage = () => (
         <Hero />
         <CourseList />
         <Testimonials />
-        <Team />
+        <TeamList />
         <Enrollment />
         <Community />
     </div>
