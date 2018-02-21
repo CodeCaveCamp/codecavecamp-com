@@ -37,9 +37,7 @@ export default class TeamMemberForm extends React.Component {
 
     onDisplayOrderChange = (e) => {
         const displayOrder = e.target.value;
-        if(!displayOrder || displayOrder.match(/(?<=\s|^)\d+(?=\s|$)/)) {
-            this.setState(() => ({ displayOrder }));
-        }
+        this.setState(() => ({ displayOrder }));
     };
 
     onStatusChange = (e) => {
