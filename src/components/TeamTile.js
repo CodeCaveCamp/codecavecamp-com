@@ -2,9 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { FaFacebook, FaLinkedin, FaTwitter, FaDribbble } from 'react-icons/lib/fa';
 
-const TeamTile = ({ id, name, title, bio, facebook, linkedIn, twitter, dribbble }) => (
+const TeamTile = ({ id, name, title, bio, facebook, linkedIn, twitter, dribbble, profileImageURL }) => (
     <div  className="team-tile">
-        <img className='profile-icon' src='/images/icon-team-profile.png' />
+        <img className='profile-icon' src={ profileImageURL } />
         <div className='team-member-name'>{ name }</div>
         <div className='team-member-title'>{ title }</div>
         <div className='social-media-icons'>

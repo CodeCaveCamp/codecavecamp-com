@@ -8,6 +8,9 @@
 
 .profile-icon {
     margin-bottom: $spacing-medium;
+    width: 128px;
+    height: 128px;
+    clip-path: circle(64px at center);
 }
 
 .team-member-name {
