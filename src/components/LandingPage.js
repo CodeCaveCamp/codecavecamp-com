@@ -12,7 +12,9 @@ const LandingPage = () => (
         <Hero />
         <CourseList />
         <Testimonials />
-        <TeamList />
+        <div className='tablet-desktop'>
+            <TeamList />
+        </div>
         <Enrollment />
         <Community />
     </div>
