@@ -41,9 +41,10 @@ export const startAddTeamMember = (teamMemberData = {}) => {
             facebook = '',
             twitter = '',
             dribbble = '',
+            profileImageURL = '',
             createdAt = 0
         } = teamMemberData;
-        const teamMember = { name, title, bio, displayOrder, linkedIn, facebook, twitter, dribbble, createdAt };
+        const teamMember = { name, title, bio, status, displayOrder, linkedIn, facebook, twitter, dribbble, profileImageURL, createdAt };
         database.ref('teamMembers').push(teamMember).then((ref) => {
             dispatch(addTeamMember({
                 id: ref.id,

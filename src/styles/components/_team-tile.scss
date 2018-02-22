@@ -1,13 +1,17 @@
 .team-tile {
     background: $light-grey;
     margin: 2rem;
-    padding: 7rem 1rem;
+    padding: 7rem 1rem 3rem;
     width: 15;
     min-width: 300px;
 }
 
 .profile-icon {
     margin-bottom: $spacing-medium;
+    width: 128px;
+    height: 128px;
+    clip-path: circle(64px at center);
+    filter: grayscale(100%);
 }
 
 .team-member-name {
@@ -34,4 +38,8 @@
 
 .social-icon {
     margin: 0 1rem;
+}
+
+a.button {
+    color: white;
 }

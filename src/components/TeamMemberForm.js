@@ -1,5 +1,10 @@
 import React from 'react';
 import moment from 'moment';
+import Dropzone from 'react-dropzone';
+import request from 'superagent';
+
+const CLOUDINARY_UPLOAD_PRESET = process.env.CLOUDINARY_UPLOAD_PRESET;
+const CLOUDINARY_UPLOAD_URL = process.env.CLOUDINARY_UPLOAD_URL;
 
 export default class TeamMemberForm extends React.Component {
     constructor(props) {
@@ -16,6 +21,7 @@ export default class TeamMemberForm extends React.Component {
             twitter: props.teamMember ? props.teamMember.twitter : '',
             dribbble: props.teamMember ? props.teamMember.dribbble : '',
             createdAt: props.teamMember ? moment(props.teamMember.createdAt) : moment(),
+            profileImageURL: props.teamMember ? props.teamMember.profileImageURL : '',
             errors: ''
         };
     }
@@ -65,6 +71,29 @@ export default class TeamMemberForm extends React.Component {
         this.setState(() => ({ twitter }));
     };
 
+    onImageDrop = (files) => {
+        // react-dropzone returns an array of uploaded file(s) -- we are only returning one image
+        const profileImage = files[0];
+        this.handleImageUpload(profileImage);
+    };
+
+    handleImageUpload = (file) => {
+        let upload = request.post(CLOUDINARY_UPLOAD_URL)
+                            .field('upload_preset', CLOUDINARY_UPLOAD_PRESET)
+                            .field('file', file);
+        upload.end((err, response) => {
+            if (err) {
+                console.error(err);
+            }
+
+            if (response.body.secure_url !== '') {
+                this.setState({
+                    profileImageURL: response.body.secure_url
+                });
+            }
+        })
+    };
+
     onSubmit = (e) => {
         e.preventDefault();
         if(!this.state.name) {
@@ -80,9 +109,11 @@ export default class TeamMemberForm extends React.Component {
                 dribbble: this.state.dribbble,
                 facebook: this.state.facebook,
                 linkedIn: this.state.linkedIn,
-                twitter: this.state.twitter
+                twitter: this.state.twitter,
+                profileImageURL: this.state.profileImageURL
             });
         }
+        console.log(this.state.profileImageURL);
     };
 
     render () {
@@ -91,6 +122,18 @@ export default class TeamMemberForm extends React.Component {
         return (
             <form className='form' onSubmit={this.onSubmit}>
                 { this.state.error && <p className='form__error'>{this.state.error}</p> }
+                <Dropzone 
+                    className='dropzone'
+                    multiple={false}
+                    accept='image/*'
+                    onDrop={this.onImageDrop}>
+                    <p>Drop image or click to select a profile image to uplaod</p>
+                </Dropzone>
+                {this.state.profileImageURL !== '' && 
+                    <div className='profile-image-preview'>
+                        <img src={this.state.profileImageURL} />
+                    </div>
+                }
                 <input 
                     autoFocus
                     type='text' 
