@@ -18,10 +18,10 @@ export class Header extends React.Component {
                 <div className="header__content">
                     <Link className="header__logo" to='/'><img src="/images/logo_header.svg" /></Link>
                     <div className="header__navigation-desktop tablet-desktop">
-                        <NavLink className="header__link header__link--desktop" to='/Courses' activeClassName='is-active'>Courses</NavLink>
-                        <NavLink className="header__link header__link--desktop" to='/Team' activeClassName='is-active'>Our Team</NavLink>
-                        <NavLink className="header__link header__link--desktop" to='/Community' activeClassName='is-active'>Community</NavLink>
-                        <NavLink className="header__link header__link--desktop" to='/Contact' activeClassName='is-active'>Contact</NavLink>
+                        <NavLink className="header__link header__link--desktop" to='/courses' activeClassName='is-active'>Courses</NavLink>
+                        <NavLink className="header__link header__link--desktop" to='/team' activeClassName='is-active'>Our Team</NavLink>
+                        <NavLink className="header__link header__link--desktop" to='/community' activeClassName='is-active'>Community</NavLink>
+                        <NavLink className="header__link header__link--desktop" to='/contact' activeClassName='is-active'>Contact</NavLink>
                     </div>
                     <div className="hamburger mobile"  onClick={this.onToggle}>
                         <div className="bar"></div>
