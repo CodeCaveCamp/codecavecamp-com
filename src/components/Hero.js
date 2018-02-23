@@ -33,6 +33,7 @@ const Hero = () => (
                 <input className='text-input' type="text" placeholder="Set a Password" />
                 <button className='button'>Sign Me Up</button>
             </form>
+            
         </div>
     </div>
 ); 

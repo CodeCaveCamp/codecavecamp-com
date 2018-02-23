@@ -8,10 +8,13 @@ export const getTeamMembers = (teamMembers) => ({
 });
 
 // startGetTeamMembers (from Firebase)
+// snapshot contains data from the database location (in this case teamMembers)
 export const startGetTeamMembers = () => {
     return (dispatch) => {
         return database.ref('teamMembers').once('value').then((snapshot) => {
+            // convert the data from snapshot to turn it into an array of data
             const teamMembers = [];
+            // childSnapshot holds the content of each child
             snapshot.forEach((childSnapshot) => {
                 teamMembers.push({
                     id: childSnapshot.key,
