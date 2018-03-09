@@ -8,6 +8,12 @@
 }
 
 .form__error {
-    margin: 0 0 $spacing-medium 0;
-    font-style: italic;
+    color: $error-color;
+    margin: 0 $spacing-small;
+}
+
+.form__success {
+    background: lighten($success-color, 30%);
+    margin: $spacing-medium;
+    padding: $spacing-medium;
 }
