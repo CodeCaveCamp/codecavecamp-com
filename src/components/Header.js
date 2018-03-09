@@ -1,6 +1,5 @@
 import React from 'react';
 import { NavLink, Link } from 'react-router-dom';
-import { startLogin, startLogout } from '../actions/auth';
 
 export class Header extends React.Component {
 

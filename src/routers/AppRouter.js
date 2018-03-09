@@ -4,7 +4,6 @@ import { Router, Route, Switch, Link, NavLink } from 'react-router-dom';
 import createHistory from 'history/createBrowserHistory';
 
 // Pages
-import LoginPage from '../components/LoginPage';
 import LandingPage from '../components/LandingPage';
 import CoursesPage from '../components/CoursesPage';
 import TeamPage from '../components/TeamPage';

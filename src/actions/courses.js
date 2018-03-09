@@ -31,7 +31,7 @@ export const addCourse = (course) => ({
     course
 });
 
-// startAddCourse (firegbase)
+// startAddCourse (firebase)
 export const startAddCourse = (courseData = {}) => {
     return (dispatch) => {
         const {
